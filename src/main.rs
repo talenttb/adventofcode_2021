@@ -19,34 +19,7 @@ fn main() {
         "1" => days::day1::solution(part, from_file != 0),
         "2" => days::day2::solution(part, from_file != 0),
         "3" => days::day3::solution(part, from_file != 0),
-        // "1" => match part {
-        //     "1" => days::day1::day1_part1(from_file != 0),
-        //     "2" => days::day1::day1_part2(),
-        //     _ => (),
-        // },
+        "4" => days::day4::solution(part, from_file != 0),
         _ => (),
     }
-
-    // You can see how many times a particular flag or argument occurred
-    // Note, only flags can have multiple occurrences
-    // match matches.occurrences_of("debug") {
-    //     0 => println!("Debug mode is off"),
-    //     1 => println!("Debug mode is kind of on"),
-    //     2 => println!("Debug mode is on"),
-    //     _ => println!("Don't be crazy"),
-    // }
-
-    // You can check for the existence of subcommands, and if found use their
-    // matches just as you would the top level app
-    // if let Some(matches) = matches.subcommand_matches("test") {
-    //     // "$ myapp test" was run
-    //     if matches.is_present("list") {
-    //         // "$ myapp test -l" was run
-    //         println!("Printing testing lists...");
-    //     } else {
-    //         println!("Not printing testing lists...");
-    //     }
-    // }
-
-    // Continued program logic goes here...
 }
