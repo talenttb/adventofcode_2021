@@ -20,6 +20,7 @@ fn main() {
         "2" => days::day2::solution(part, from_file != 0),
         "3" => days::day3::solution(part, from_file != 0),
         "4" => days::day4::solution(part, from_file != 0),
+        "5" => days::day5::solution(part, from_file != 0),
         _ => (),
     }
 }
