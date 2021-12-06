@@ -12,15 +12,15 @@ fn main() {
 
     let from_file = matches.occurrences_of("fromFile");
     let part = matches.value_of("part").unwrap_or_else(|| "1");
-    // println!("part: {}", part);
-    let day = matches.value_of("day").unwrap();
+    let day = format!("day{}", matches.value_of("day").unwrap());
 
-    match day {
-        "1" => days::day1::solution(part, from_file != 0),
-        "2" => days::day2::solution(part, from_file != 0),
-        "3" => days::day3::solution(part, from_file != 0),
-        "4" => days::day4::solution(part, from_file != 0),
-        "5" => days::day5::solution(part, from_file != 0),
+    match day.as_ref() {
+        "day1" => days::day1::solution(part, from_file != 0),
+        "day2" => days::day2::solution(part, from_file != 0),
+        "day3" => days::day3::solution(part, from_file != 0),
+        "day4" => days::day4::solution(part, from_file != 0),
+        "day5" => days::day5::solution(part, from_file != 0),
+        "day6" => days::day6::solution(part, from_file != 0),
         _ => (),
     }
 }
