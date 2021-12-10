@@ -3,7 +3,7 @@ cargo run -- -d 4 -p 1 --ff
 ```
 
 ```
-cp src/days/day_default.rs src/days/day9.rs && touch src/days/day9input
+cp src/days/day_default.rs src/days/day10.rs && touch src/days/day10input
 ```
 
 ref:
