@@ -159,8 +159,7 @@ fn day11p2(input: &[String]) -> i32 {
         .iter()
         .map(|item| {
             item.split("")
-                .map(|x| x.parse::<i32>())
-                .filter_map(Result::ok)
+                .filter_map(|x| x.parse::<i32>().ok())
                 .collect::<Vec<i32>>()
         })
         .collect::<Vec<Vec<i32>>>();

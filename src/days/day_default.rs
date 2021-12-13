@@ -11,6 +11,14 @@ pub fn solution(part: &str, ff: bool) {
                     // for v in l.split(",") {
                     //     input.push(v.parse::<i32>().unwrap());
                     // }
+                    // let _tmp = input
+                    //     .iter()
+                    //     .map(|item| {
+                    //         item.split("")
+                    //             .filter_map(|x| x.parse::<i32>().ok())
+                    //             .collect::<Vec<i32>>()
+                    //     })
+                    //     .collect::<Vec<Vec<i32>>>();
                 }
             }
         }
