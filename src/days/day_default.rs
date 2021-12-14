@@ -6,19 +6,7 @@ pub fn solution(part: &str, ff: bool) {
         if let Ok(lines) = read_lines("./src/days/dayXinput") {
             for line in lines {
                 if let Ok(l) = line {
-                    println!("{}", l);
-                    // input.push(l.parse::<i32>().unwrap());
-                    // for v in l.split(",") {
-                    //     input.push(v.parse::<i32>().unwrap());
-                    // }
-                    // let _tmp = input
-                    //     .iter()
-                    //     .map(|item| {
-                    //         item.split("")
-                    //             .filter_map(|x| x.parse::<i32>().ok())
-                    //             .collect::<Vec<i32>>()
-                    //     })
-                    //     .collect::<Vec<Vec<i32>>>();
+                    input.push(l);
                 }
             }
         }
@@ -39,13 +27,30 @@ pub fn solution(part: &str, ff: bool) {
     }
 }
 
-fn dayXp1(input: &[i32]) -> i32 {
+fn convert_input(input: &[String]) {
     println!("{:?}", input);
+    // let (papers_str, rest): (Vec<_>, Vec<_>) = input.into_iter().partition(|&x| x.contains(","));
+    // input.push(l.parse::<i32>().unwrap());
+    // for v in l.split(",") {
+    //     input.push(v.parse::<i32>().unwrap());
+    // }
+    // let _tmp = input
+    //     .iter()
+    //     .map(|item| {
+    //         item.split("")
+    //             .filter_map(|x| x.parse::<i32>().ok())
+    //             .collect::<Vec<i32>>()
+    //     })
+    //     .collect::<Vec<Vec<i32>>>();
+}
+
+fn dayXp1(input: &[String]) -> i32 {
+    convert_input(input);
     0
 }
 
-fn dayXp2(input: &[i32]) -> i32 {
-    println!("{:?}", input);
+fn dayXp2(input: &[String]) -> i32 {
+    convert_input(input);
     0
 }
 

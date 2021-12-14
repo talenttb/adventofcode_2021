@@ -224,7 +224,7 @@ fn day13p2(input: &[String]) -> i32 {
         y_size = board.len();
         match fold {
             Point { x: 0, y } => {
-                println!("match y, y={:?}", y);
+                // println!("match y, y={:?}", y);
                 for axie_x in 0..x_size {
                     for axie_y in 0..y {
                         // println!(
@@ -246,7 +246,7 @@ fn day13p2(input: &[String]) -> i32 {
                 board = board[..y].to_vec();
             }
             Point { x, y: 0 } => {
-                println!("match x, x={:?}", x);
+                // println!("match x, x={:?}", x);
                 for axie_y in 0..y_size {
                     for axie_x in 0..x {
                         // println!(
